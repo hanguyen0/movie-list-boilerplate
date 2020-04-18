@@ -1,2 +1,10 @@
 node_modules/
 bundle.js
+
+
+## Compiled files ##
+compiled/
+
+## API keys ##
+src/config/movies.js
+# compiled/config/movies.js

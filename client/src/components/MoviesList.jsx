@@ -1,18 +1,23 @@
 import React from 'react';
 
 const MoviesList = (props) => {
+    // {const filteredMovies = props.movies.filter((movie, idx) => {
+    //     if (movie.toLowerCase().includes(props.searchTerm.toLowerCase())) {
+    //         return movie;
+    //     }
+    // });
+    
     return (
-        <div>
+        <ul>
 
-            {props.movies.filter((movie, idx) => {
-                if (movie.toLowerCase().includes(props.searchTerm.toLowerCase())) {
-                    return (
-                        <li key={movie.title + idx}>{movie.title}</li>
-                    )
-                }
-                
-            })}
-        </div>
+            {props.movies.map((movie, idx) => 
+                // if (movie.toLowerCase().includes(props.searchTerm.toLowerCase())) {
+
+                <li key={movie.title + idx}>{movie.title}</li>
+
+                // }
+            )}
+        </ul>
     )
 }
 
